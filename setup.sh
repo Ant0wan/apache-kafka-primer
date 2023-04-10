@@ -17,10 +17,12 @@ sudo mv kafka_2.13-${VERSION}/* ${WORKDIR}
 sudo chown -R $USER:$GROUP ${WORKDIR}
 rm -rf kafka_2.13-${VERSION}.tgz kafka_2.13-${VERSION}
 
-# Not needed
-sudo runuser -l "$USER" -c "
-pushd ${WORKDIR} || exit 1
-ls -la
-export PATH=$PATH:/opt/java/jre1.8.0_361/bin/
-popd || exit 1
-"
+function test_access() {
+	sudo runuser -l "$USER" -c "
+	pushd ${WORKDIR} || exit 1
+	ls -la
+	export PATH=$PATH:/opt/java/jre1.8.0_361/bin/
+	popd || exit 1
+	"
+}
+test_access
