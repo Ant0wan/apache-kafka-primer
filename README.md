@@ -6,7 +6,7 @@
 
   <h1 align="center">Apache Kafka Primer</h1>
 
-  <p align="center"><i>Setting up an experimental Kafka cluster by configuring brokers and ZooKeeper nodes.</i>
+  <p align="center"><i>Setting up an experimental Kafka cluster by running brokers and ZooKeeper nodes with Supervisor.</i>
   </p>
 </p>
 
