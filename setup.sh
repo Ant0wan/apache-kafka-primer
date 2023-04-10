@@ -8,7 +8,7 @@ WORKDIR='/opt/kafka'
 USER='kafka'
 GROUP='kafka'
 
-sudo adduser --no-create-home --disabled-password "$USER"
+sudo adduser --gecos --no-create-home --disabled-password "$USER"
 sudo install -d -m 0755 -o "$USER" -g "$GROUP" "$WORKDIR"
 
 curl https://dlcdn.apache.org/kafka/${VERSION}/kafka_2.13-${VERSION}.tgz --output ${WORKDIR}/kafka_2.13-${VERSION}.tgz
