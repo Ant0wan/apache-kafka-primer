@@ -4,5 +4,5 @@ curl https://dlcdn.apache.org/kafka/${VERSION}/kafka_2.13-${VERSION}.tgz --outpu
 tar -xzf kafka_2.13-${VERSION}.tgz
 rm -rf kafka_2.13-${VERSION}.tgz
 pushd kafka_2.13-${VERSION}/ || exit 1
-export PATH=$PATH:/usr/local/java/jre1.8.0_361/bin/
+export PATH=$PATH:/opt/java/jre1.8.0_361/bin/
 popd || exit 1
