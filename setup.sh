@@ -10,6 +10,7 @@ GROUP='kafka'
 
 sudo adduser --gecos --no-create-home --disabled-password "$USER"
 sudo install -d -m 0755 -o "$USER" -g "$GROUP" "$WORKDIR"
+sudo usermod -d "$WORKDIR" "$USER"
 
 curl https://dlcdn.apache.org/kafka/${VERSION}/kafka_2.13-${VERSION}.tgz --output kafka_2.13-${VERSION}.tgz
 tar -xzf kafka_2.13-${VERSION}.tgz
