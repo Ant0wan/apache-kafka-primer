@@ -14,7 +14,7 @@
 
 ### Prerequisites
 
-> NOTE: Your local environment must have Java 8+ installed.
+> *NOTE: Your local environment must have Java 8+ installed.*
 
 
 ## Run
