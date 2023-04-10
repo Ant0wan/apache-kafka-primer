@@ -6,7 +6,7 @@
 
   <h1 align="center">Apache Kafka Quickstart</h1>
 
-  <p align="center"><i>.</i>
+  <p align="center"><i>Setting up an experimental Kafka cluster by configuring brokers and ZooKeeper nodes.</i>
   </p>
 </p>
 
