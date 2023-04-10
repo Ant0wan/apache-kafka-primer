@@ -34,4 +34,5 @@ bin/kafka-server-start.sh config/server.properties
 - [Quickstart](https://kafka.apache.org/quickstart)
 - [App using Kafka](https://openclassrooms.com/fr/courses/4451251-gerez-des-flux-de-donnees-temps-reel/4451526-creez-votre-premiere-application-avec-kafka)
 - [Download Kafka](https://www.apache.org/dyn/closer.cgi?path=/kafka/3.4.0/kafka_2.13-3.4.0.tgz)
+- [Streams](https://kafka.apache.org/documentation/streams/)
 
