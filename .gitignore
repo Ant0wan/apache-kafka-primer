@@ -1,1 +1,2 @@
-kafka*.tgz
+kafka_*.tgz
+kafka_*/
