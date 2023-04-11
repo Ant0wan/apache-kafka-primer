@@ -23,7 +23,7 @@ function test_access() {
 	pushd ${WORKDIR} || exit 1
 	ls -la
 	export PATH=$PATH:/opt/java/jre1.8.0_361/bin/
-    which java
+        which java
 	popd || exit 1
 	"
 }
