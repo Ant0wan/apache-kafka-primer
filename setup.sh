@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -o errexit
 set -o xtrace
-set -o pipefail
 
 VERSION='3.4.0'
 WORKDIR='/opt/kafka'
@@ -18,7 +17,7 @@ sudo mv kafka_2.13-${VERSION}/* ${WORKDIR}
 sudo chown -R $USER:$GROUP ${WORKDIR}
 rm -rf kafka_2.13-${VERSION}.tgz kafka_2.13-${VERSION}
 
-function test_access() {
+test_access() {
  sudo runuser -l "$USER" -c "
 	pushd ${WORKDIR} || exit 1
 	ls -la
