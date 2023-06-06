@@ -6,11 +6,6 @@ terraform {
       source  = "hashicorp/aws"
       version = "5.1.0"
     }
-
-    alkira = {
-      source  = "alkiranet/alkira"
-      version = "0.9.9"
-    }
   }
 }
 
